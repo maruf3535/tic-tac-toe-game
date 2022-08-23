@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: #08719f;
+
+}
+
+h1{
+    padding: 4rem 8rem 0rem 8rem;
+    font-size: 4rem;
+    text-align: center;
+    color: #c2eded;
+}
+
+#container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#div-two{
+    padding: 1rem 0rem .5rem 0rem;
+}
+
+#div-two-p{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+#div-one{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    margin: 0rem 22.5rem;
+    width: 31rem;
+    height: auto;
+    position: relative;
+}
+
+.div-nine{
+    border: .2rem solid rgb(110 165 179);
+    background-color: #1d5e7a;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    height: 10rem;
+    width: auto;
+}
+
+#restart{
+    border: none;
+    border-radius: 1.4rem;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin-top: 1.4rem;
+    background: #06374c;
+    color: #c2eded;
+    cursor: pointer;
+}
+
+#div-one div{
+    /* border: .35rem solid burlywood; */
+    border-radius: 1.5rem;
+    background-color: burlywood;
+    position: absolute;
+}
+
+#line-1{
+    left: 5rem;
+}
+#line-2{
+    left: 15rem;
+}
+#line-3{
+    left: 25rem;
+}
+#line-4{
+    top: -7.5rem;
+}
+#line-5{
+    top: 2.5rem;
+}
+#line-6{
+    top: 12rem;
+}
+#line-7{
+    transform: rotate(45deg);
+}
+#line-8{
+    transform: rotate(-45deg);
+}
+
+.lines{
+    height: 0rem;
+    width: 0.7rem;
+    transition-duration: 1s;    
+}
+
+.column-lines{
+    top: 2.5rem;
+}
+
+.row-lines{
+    left: 15rem;
+    transform: rotate(90deg);
+}
+
+.diagonal-lines{
+    top: -.5rem;
+    left: 15rem;
+}
+
+
+/* Utility Classes */
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+
+
+/* Responsive design */
+@media (max-width: 500px){
+    html{
+        font-size: 7px;
+    }
+}
